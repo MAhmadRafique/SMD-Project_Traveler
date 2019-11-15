@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/crop"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btn_signUpWithFacebook"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginTop="570dp"
+            android:background="@color/colorFacebook"
+            android:drawableStart="@drawable/facebook_logo"
+            android:fontFamily="@font/abel"
+            android:text="@string/sign_up_with_facebook"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_25"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_signUpWithTwitter"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorTwitter"
+            android:drawableStart="@drawable/twitter_logo"
+            android:fontFamily="@font/abel"
+            android:text="@string/sign_up_with_twitter"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_25"
+            app:layout_constraintEnd_toEndOf="@+id/btn_signUpWithFacebook"
+            app:layout_constraintStart_toStartOf="@+id/btn_signUpWithFacebook"
+            app:layout_constraintTop_toBottomOf="@+id/btn_signUpWithFacebook" />
+
+        <Button
+            android:id="@+id/btn_signUpWithEmail"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_60"
+            android:background="@color/colorMediumDarkRed"
+            android:drawableStart="@drawable/email_logo"
+            android:fontFamily="@font/abel"
+            android:text="@string/sign_up_with_email"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_25"
+            app:layout_constraintEnd_toEndOf="@+id/btn_signUpWithTwitter"
+            app:layout_constraintStart_toStartOf="@+id/btn_signUpWithTwitter"
+            app:layout_constraintTop_toBottomOf="@+id/btn_signUpWithTwitter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="@+id/btn_signUpWithEmail"
+            app:layout_constraintStart_toStartOf="@+id/btn_signUpWithEmail"
+            app:layout_constraintTop_toBottomOf="@+id/btn_signUpWithEmail" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
